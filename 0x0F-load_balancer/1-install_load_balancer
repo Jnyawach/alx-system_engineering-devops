@@ -34,11 +34,11 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend clickviral-tech-frontend
+frontend jnyawach-tech-frontend
     bind *:80
-    default_backend clickviral-tech-backend
+    default_backend jnyawach-tech-backend
 
-backend clickviral-tech-backend
+backend jnyawach-tech-backend
     balance roundrobin
      server 438533-web-01 34.229.66.113:80 check
     server 438533-web-02 34.229.137.74:80 check
